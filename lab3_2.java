@@ -55,7 +55,8 @@ public class Lab2Activity extends AppCompatActivity {
         long start = System.nanoTime();
 
         int index = 0;
-        while (iterations++ < iterationsNum && (System.nanoTime() - start) < deadline) {
+        //  доп задание
+        while (iterations++ < iterationsNum && ((nanoTime() - startTime > 1000000000)) {
 
             index %= 4;
 
