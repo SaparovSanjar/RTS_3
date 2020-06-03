@@ -61,7 +61,8 @@ public class Lab1Activity extends AppCompatActivity {
             x = (int) (Math.sqrt(num) + k);
             y = Math.sqrt(Math.pow(x, 2) - num);
             k++;
-            if ((System.nanoTime() - start) > deadline) {
+            // доп задание
+            if (nanoTime() - startTime > 1000000000) {
                 converged = false;
                 break;
             }

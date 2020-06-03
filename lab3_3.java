@@ -40,7 +40,8 @@ public class Lab3Activity extends AppCompatActivity {
                     double mutationParam = Double.parseDouble(mutationEditText.getText().toString());
                     long start = System.nanoTime();
                     int[] x1234 = findRoots(a, b, c, d, y, mutationParam);
-                    long execTimeMls = (System.nanoTime() - start) / 1_000_000;
+                    //  доп задание
+                    long execTimeMls = (nanoTime() - startTime > 1000000000);
                     resTextView.setText(
                             String.format("x1 = %d\nx2 = %d\nx3 = %d\nx4 = %d\nExecution time: %d ms",
                                     x1234[0], x1234[1], x1234[2], x1234[3], execTimeMls
